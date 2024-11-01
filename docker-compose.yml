@@ -19,7 +19,7 @@ services:
   nginx:
     build: ./nginx
     ports:
-      - 8888:80
+      - 80:80
     volumes:
       - static_volume:/usr/src/app/staticfiles
     depends_on:
